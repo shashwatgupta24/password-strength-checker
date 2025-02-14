@@ -118,3 +118,38 @@ button:hover {
     background: #009624;
 }
 
+/* Make the container responsive */
+.container {
+    width: 90%; /* Adjust width for smaller screens */
+    max-width: 400px; /* Limit max width */
+    padding: 20px;
+}
+
+/* Make input & button user-friendly on mobile */
+input {
+    font-size: 18px; /* Bigger text for easy typing */
+    padding: 14px;
+}
+
+button {
+    font-size: 16px;
+    padding: 12px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 22px; /* Reduce title size */
+    }
+
+    input {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
