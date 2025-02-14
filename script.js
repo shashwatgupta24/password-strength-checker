@@ -35,6 +35,30 @@ document.getElementById('password').addEventListener('input', function () {
     }
 });
 
+document.getElementById('generateBtn').addEventListener('click', function () {
+    const length = 12; // Default password length
+    const chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+";
+    let password = "";
+
+    for (let i = 0; i < length; i++) {
+        password += chars.charAt(Math.floor(Math.random() * chars.length));
+    }
+
+    document.getElementById('password').value = password;
+});
+
+document.getElementById('copyBtn').addEventListener('click', function () {
+    const passwordField = document.getElementById('password');
+
+    if (passwordField.value.length > 0) {
+        passwordField.select();
+        navigator.clipboard.writeText(passwordField.value);
+        alert("Password copied to clipboard!");
+    } else {
+        alert("Generate a password first!");
+    }
+});
+
 
 
 

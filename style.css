@@ -70,14 +70,14 @@ input::placeholder {
     transform: translateY(-50%);
     background: none;
     border: none;
-    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 0.733);
     cursor: pointer;
     font-size: 18px;
     outline: none;
 }
 
 #togglePassword:hover {
-    color: white;
+    color: rgba(255, 255, 255, 0.637);
 }
 
 /* Strength Meter */
@@ -101,4 +101,20 @@ input::placeholder {
     text-transform: uppercase;
 }
 
+button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #00c853;
+    color: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #009624;
+}
 
