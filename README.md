@@ -1,28 +1,28 @@
-Password Strength Checker
+**Password Strength Checker**
 
 A clean and professional Password Strength Checker that evaluates password security based on various criteria and provides real-time feedback. The project is deployed on GitHub Pages.
 
-🚀 Features
+🚀 **Features**
 
-Password Strength Meter (Weak, Moderate, Strong)
+1. Password Strength Meter (Weak, Moderate, Strong)
 
-Real-time Feedback for user guidance
+2. Real-time Feedback for user guidance
 
-Dynamic Strength Bar that changes color
+3. Dynamic Strength Bar that changes color
 
-Eye Toggle Button to show/hide password
+4. Eye Toggle Button to show/hide password
 
-Password Generator to suggest strong passwords
+5. Password Generator to suggest strong passwords
 
-Fully Responsive Design for mobile-friendliness
+5. Fully Responsive Design for mobile-friendliness
 
 📌 Live Demo
 
-Check Live Version
+https://shashwatgupta24.github.io/password-strength-checker/
 
 🛠️ Installation
 
-Clone the Repository:
+**Clone the Repository:**
 
 git clone https://github.com/your-github-username/password-strength-checker.git
 cd password-strength-checker
@@ -31,7 +31,7 @@ Open index.html in a Browser:
 
 Simply open index.html in any modern browser (Chrome, Edge, Firefox, etc.)
 
-🖥️ Project Structure
+🖥️ **Project Structure**
 
 password-strength-checker/
 │── index.html        # Main HTML file
@@ -39,7 +39,7 @@ password-strength-checker/
 │── script.js         # JavaScript for functionality
 └── README.md         # Project documentation
 
-🎨 UI Design
+🎨 **UI Design**
 
 The UI is designed to be clean and professional, with:
 
@@ -49,21 +49,21 @@ A glassmorphism effect on the input box
 
 A smooth hover effect for better UX
 
-📱 Mobile-Friendliness
+📱 **Mobile-Friendliness**
 
 The project is fully responsive, ensuring proper display on all devices.
 
 Uses flexbox and media queries to adjust layout dynamically.
 
-🚀 Deployment on GitHub Pages
+🚀** Deployment on GitHub Pages**
 
-To deploy the project:
+**To deploy the project:**
 
-Push your code to GitHub.
+1. Push your code to GitHub.
 
-Go to Settings → Pages → Select main branch.
+2. Go to Settings → Pages → Select main branch.
 
-Your site will be live at https://your-github-username.github.io/password-strength-checker/.
+3. Your site will be live at https://your-github-username.github.io/password-strength-checker/.
 
 📜 License
 
