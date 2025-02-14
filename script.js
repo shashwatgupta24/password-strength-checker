@@ -5,38 +5,39 @@ document.getElementById('password').addEventListener('input', function () {
 
     let strength = 0;
 
+    // Reset styles
+    strengthMeter.style.width = "10%"; // Keeps the bar visible at all times
+    strengthMeter.style.backgroundColor = "red"; // Default to weak
+    feedback.innerText = "";
+
     if (password.length >= 8) strength++;
     if (password.match(/[A-Z]/)) strength++;
     if (password.match(/[a-z]/)) strength++;
     if (password.match(/[0-9]/)) strength++;
     if (password.match(/[^A-Za-z0-9]/)) strength++;
 
-    // Reset classes before applying new one
-    strengthMeter.className = "";
-    strengthMeter.style.width = "0%";  
-
     if (password.length === 0) {
-        feedback.innerText = ""; // Remove feedback when input is empty
-        strengthMeter.style.display = "none"; // Hide the bar
-        return;
-    } else {
-        strengthMeter.style.display = "block"; // Show the bar when typing
-    }
-
-    if (strength <= 2) {
-        strengthMeter.classList.add("weak");
-        strengthMeter.style.width = "33%";
-        feedback.innerText = "Weak password!";
+        strengthMeter.style.width = "10%"; // Keeps it from disappearing
+        strengthMeter.style.backgroundColor = "transparent";
+        feedback.innerText = "";
+    } else if (strength <= 2) {
+        strengthMeter.style.width = "30%";
+        strengthMeter.style.backgroundColor = "red";
+        feedback.innerText = "Weak password! Try adding numbers & symbols.";
     } else if (strength <= 4) {
-        strengthMeter.classList.add("moderate");
-        strengthMeter.style.width = "66%";
-        feedback.innerText = "Moderate password!";
+        strengthMeter.style.width = "70%";
+        strengthMeter.style.backgroundColor = "yellow";
+        feedback.innerText = "Moderate password! Add uppercase & symbols.";
     } else {
-        strengthMeter.classList.add("strong");
         strengthMeter.style.width = "100%";
-        feedback.innerText = "Strong password!";
+        strengthMeter.style.backgroundColor = "green";
+        feedback.innerText = "Strong password! ✅";
     }
 });
+
+
+
+
 
 
 
