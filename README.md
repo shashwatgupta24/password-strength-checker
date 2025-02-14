@@ -16,11 +16,11 @@ A clean and professional Password Strength Checker that evaluates password secur
 
 5. Fully Responsive Design for mobile-friendliness
 
-📌 Live Demo
+📌 **Live Demo**
 
 https://shashwatgupta24.github.io/password-strength-checker/
 
-🛠️ Installation
+🛠️ **Installation**
 
 **Clone the Repository:**
 
@@ -55,7 +55,7 @@ The project is fully responsive, ensuring proper display on all devices.
 
 Uses flexbox and media queries to adjust layout dynamically.
 
-🚀** Deployment on GitHub Pages**
+🚀 **Deployment on GitHub Pages**
 
 **To deploy the project:**
 
@@ -65,7 +65,7 @@ Uses flexbox and media queries to adjust layout dynamically.
 
 3. Your site will be live at https://your-github-username.github.io/password-strength-checker/.
 
-📜 License
+📜 **License**
 
 This project is open-source under the MIT License.
 
